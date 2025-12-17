@@ -18,21 +18,21 @@ function obtenerCantidad() {
 
 // 📊 ESTADÍSTICAS DE EQUIPOS
 const equipoA = {
-  nombre: "Equipo A",
+  nombre: "Real Madrid",
   golesMedia: 1.8,
   amarillasMedia: 2.5,
   rojasMedia: 0.2,
-  faltasMedia: 12,
-  tirosPuertaMedia: 5
+  faltasMedia: 10,
+  tirosPuertaMedia: 8
 };
 
 const equipoB = {
-  nombre: "Equipo B",
-  golesMedia: 1.3,
-  amarillasMedia: 3,
+  nombre: "FC Barcelona",
+  golesMedia: 1.6,
+  amarillasMedia: 2,
   rojasMedia: 0.3,
-  faltasMedia: 14,
-  tirosPuertaMedia: 4
+  faltasMedia: 12,
+  tirosPuertaMedia: 9
 };
 
 // 🎲 GENERADOR DE RESULTADOS REALISTAS
@@ -144,3 +144,4 @@ function apostarGoles() {
 
   actualizarSaldo();
 }
+
