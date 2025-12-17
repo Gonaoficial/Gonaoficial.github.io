@@ -1,13 +1,41 @@
-<<p>Saldo: <span id="saldo">1000</span> €</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de Apuestas Completo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Simulador de Apuestas</h1>
+<p>Saldo: <strong><span id="saldo">1000</span> €</strong></p>
 <input type="number" id="cantidad" placeholder="Cantidad a apostar">
 
-<h2>Resultado del partido (1X2)</h2>
-<button onclick="apostar1X2('A')">Gana Equipo A</button>
-<button onclick="apostar1X2('Empate')">Empate</button>
-<button onclick="apostar1X2('B')">Gana Equipo B</button>
+<h2>1️⃣ Resultado del partido (1X2)</h2>
+<select id="resultadoElegido">
+  <option value="A">Gana Equipo A</option>
+  <option value="Empate">Empate</option>
+  <option value="B">Gana Equipo B</option>
+</select>
 
-<h2>Apostar a goles totales</h2>
+<h2>2️⃣ Goles totales</h2>
 <input type="number" id="golesElegidos" placeholder="Goles totales">
-<button onclick="apostarGoles()">Apostar goles</button>
+
+<h2>3️⃣ Tarjetas amarillas</h2>
+<input type="number" id="amarillasElegidas" placeholder="Número de amarillas">
+
+<h2>4️⃣ Tarjetas rojas</h2>
+<input type="number" id="rojasElegidas" placeholder="Número de rojas">
+
+<h2>5️⃣ Faltas</h2>
+<input type="number" id="faltasElegidas" placeholder="Número de faltas">
+
+<h2>6️⃣ Tiros a puerta</h2>
+<input type="number" id="tirosElegidos" placeholder="Número de tiros a puerta">
+
+<br><br>
+<button onclick="confirmarApuesta()">Confirmar apuesta</button>
 
 <script src="game.js"></script>
+</body>
+</html>
